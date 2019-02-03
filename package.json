@@ -11,10 +11,14 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^24.0.0",
+    "jest-cucumber": "^1.0.11",
     "jest-puppeteer": "^3.9.0",
     "puppeteer": "^1.12.1"
   },
   "jest": {
-    "preset": "jest-puppeteer"
+    "preset": "jest-puppeteer",
+    "testMatch": [
+      "**/*.steps.js"
+    ]
   }
 }
